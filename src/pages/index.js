@@ -1,15 +1,18 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from "react";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
-import whitePaper from '../assets/images/white-paper.png'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import whitePaper from "../assets/images/white-paper.png";
+import pic02 from "../assets/images/pic02.jpg";
+import pic03 from "../assets/images/pic03.jpg";
+import pic04 from "../assets/images/pic04.jpg";
+
+var paperLink =
+  "https://github.com/redbadger/microplatforms-whitepaper/blob/d8c28bf96d46e49de7b0ab665c3697438ed230c0/paper.pdf";
 
 class Homepage extends React.Component {
   render() {
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteTitle = this.props.data.site.siteMetadata.title;
 
     return (
       <div>
@@ -20,10 +23,7 @@ class Homepage extends React.Component {
             <div className="col-6">
               <header className="major">
                 <h2>
-                  Read the{' '}
-                  <a href="https://github.com/redbadger/microplatforms-whitepaper/blob/d8c28bf96d46e49de7b0ab665c3697438ed230c0/paper.pdf">
-                    White Paper
-                  </a>
+                  Read the <a href={paperLink}>White Paper</a>
                 </h2>
               </header>
               <h3>Abstract</h3>
@@ -48,7 +48,9 @@ class Homepage extends React.Component {
             </div>
             <div className="col-6">
               <span className="image fit">
-                <img src={whitePaper} alt="Microplatforms white paper" />
+                <a href={paperLink}>
+                  <img src={whitePaper} alt="Microplatforms white paper" />
+                </a>
               </span>
             </div>
           </div>
@@ -196,15 +198,15 @@ class Homepage extends React.Component {
           </div>
         </section>
       </div>
-    )
+    );
   }
 }
 
 Homepage.propTypes = {
-  route: React.PropTypes.object,
-}
+  route: React.PropTypes.object
+};
 
-export default Homepage
+export default Homepage;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -214,4 +216,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

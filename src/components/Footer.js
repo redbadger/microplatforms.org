@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 class Footer extends React.Component {
   render() {
@@ -21,12 +21,18 @@ class Footer extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#" className="icon alt fa-github">
+            <a
+              href="https://github.com/redbadger/microplatforms-whitepaper"
+              className="icon alt fa-github"
+            >
               <span className="label">GitHub</span>
             </a>
           </li>
           <li>
-            <a href="#" className="icon alt fa-envelope">
+            <a
+              href="mailto:hello@red-badger.com"
+              className="icon alt fa-envelope"
+            >
               <span className="label">Email</span>
             </a>
           </li>
@@ -41,8 +47,8 @@ class Footer extends React.Component {
           </li>
         </ul>
       </section>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

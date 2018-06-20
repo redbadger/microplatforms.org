@@ -9,7 +9,7 @@ class Header extends React.Component {
           <h1>
             Welcome to <strong>microplatforms.org</strong>
           </h1>
-          <p>Learn about how Microplatforms can help you move faster!</p>
+          <p>Learn how Microplatforms can help you move faster!</p>
           <ul className="actions">
             <li>
               <a href="#one" className="button scrolly">
