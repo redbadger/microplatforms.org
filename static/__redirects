@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://eloquent-babbage-fb8500.netlify.com/* http://microplatforms.org/:splat 301!
