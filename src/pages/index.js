@@ -58,55 +58,62 @@ class Homepage extends React.Component {
 
         <section id="two" className="main style2">
           <div className="grid-wrapper">
-            <div className="col-6">
+            <div className="col-3">
               <ul className="major-icons">
                 <li>
+                  <h4 className="box">Everything as Code</h4>
                   <span className="icon style1 major fa-code" />
                 </li>
                 <li>
+                  <h4 className="box">Full Automation</h4>
+                  <span className="icon style4 major fa-cogs" />
+                </li>
+                <li>
+                  <h4 className="box">Immutability</h4>
                   <span className="icon style2 major fa-bolt" />
                 </li>
                 <li>
-                  <span className="icon style3 major fa-camera-retro" />
-                </li>
-                <li>
-                  <span className="icon style4 major fa-cog" />
-                </li>
-                <li>
-                  <span className="icon style5 major fa-desktop" />
-                </li>
-                <li>
-                  <span className="icon style6 major fa-calendar" />
+                  <h4 className="box">Idempotency</h4>
+                  <span className="icon style5 major fa-play-circle" />
                 </li>
               </ul>
             </div>
-            <div className="col-6">
+            <div className="col-9">
               <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing<br />
-                  amet dolor consequat
-                </h2>
+                <h2>Autonomous cross-functional teams are more productive</h2>
               </header>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                Today's high performing cross-functional teams are T-shaped,
+                polyglot and DevOps focused.
               </p>
               <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
+                They own their domain, and take responsibility for their product
+                from top to bottom, cradle to grave. They design, build, test
+                and validate, deploy, manage and maintain the software they
+                produce, including being called at two o'clock in the morning
+                when a problem arises.
               </p>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                They're in the best position to be able to find problems and fix
+                them, especially if they are doing Continuous Deployment into
+                Production, where each deployment is tiny and the changes are
+                fresh in everyone's heads. Mean Time to Recovery (MTTR) becomes
+                optimally small.
+              </p>
+              <p>
+                "Microplatforms" is a concept that encapsulates a few highly
+                effective principles - full automation, everything-as-code,
+                immutability, and idempotency - all leading to autonomy and
+                simplicity. These principles, combined with a selection of Open
+                Source tooling (like Kubernetes, Argo, Istio and some other
+                small utilities), provide teams with all the control they need
+                to run and manage their product, even at web scale, and in
+                enterprises with strict security requirements.
+              </p>
+              <p>
+                You can build your own Microplatforms in minutes using the ideas
+                presented here. And you can move faster by adopting
+                Microplatforms in your teams.
               </p>
             </div>
           </div>
