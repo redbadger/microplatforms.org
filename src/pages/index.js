@@ -8,7 +8,7 @@ import pic03 from "../assets/images/pic03.jpg";
 import pic04 from "../assets/images/pic04.jpg";
 
 var paperLink =
-  "https://github.com/redbadger/microplatforms-whitepaper/blob/d8c28bf96d46e49de7b0ab665c3697438ed230c0/paper.pdf";
+  "https://github.com/redbadger/microplatforms-whitepaper/blob/616e53c5b75c06493c49d1819628e857e27ca39f/paper.pdf";
 
 class Homepage extends React.Component {
   render() {
