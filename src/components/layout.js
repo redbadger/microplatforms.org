@@ -1,45 +1,32 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "../assets/scss/main.scss";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
 
+import "../assets/scss/main.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-class Template extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: "is-loading"
-    };
-  }
-
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: "" });
-    }, 100);
-  }
-
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  }
-
-  render() {
-    const { children } = this.props;
-
-    return (
-      <div className={`body ${this.state.loading}`}>
+export default ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query LayoutQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Helmet
+          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+          defaultTitle={data.site.siteMetadata.title}
+        />
         <Header />
-        {children}
+        <div>{children}</div>
         <Footer />
-      </div>
-    );
-  }
-}
-
-Template.propTypes = {
-  children: PropTypes.func
-};
-
-export default Template;
+      </>
+    )}
+  />
+);
