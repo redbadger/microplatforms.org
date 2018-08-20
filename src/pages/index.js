@@ -61,19 +61,15 @@ class Homepage extends React.Component {
             <div className="col-3">
               <ul className="major-icons">
                 <li>
-                  <h4 className="box">Everything as Code</h4>
                   <span className="icon style1 major fa-code" />
                 </li>
                 <li>
-                  <h4 className="box">Full Automation</h4>
                   <span className="icon style4 major fa-cogs" />
                 </li>
                 <li>
-                  <h4 className="box">Immutability</h4>
                   <span className="icon style2 major fa-bolt" />
                 </li>
                 <li>
-                  <h4 className="box">Idempotency</h4>
                   <span className="icon style5 major fa-play-circle" />
                 </li>
               </ul>
@@ -123,10 +119,10 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
-                <h2>Adipiscing amet consequat</h2>
+                <h2>The principles behind microplatforms</h2>
               </header>
               <p>
-                Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.
+                Microplatforms are just a collection of concepts and principles.
               </p>
             </div>
 
@@ -134,10 +130,17 @@ class Homepage extends React.Component {
               <span className="image fit">
                 <img src={pic02} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>
+                Full Automation,<br />Everything as Code
+              </h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Microplatforms consist entirely of code. Just code in a github
+                repo. Infrastructure as code. Pipelines as code. Application as
+                code. Tests as code. Container orchestrations as code.
+              </p>
+              <p>
+                This enables us to stamp out identical microplatforms for each
+                environment in a 100% automated way.
               </p>
               <ul className="actions">
                 <li>
@@ -151,10 +154,19 @@ class Homepage extends React.Component {
               <span className="image fit">
                 <img src={pic03} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>
+                Immutability,<br /> Idempotency
+              </h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Immutable Infrastructure can only be created and destroyed. It
+                cannot be modified in place. Change happens by improving the
+                code and replacing instances with new ones made from the new
+                evolved code. This forward-only paradigm leads to reliable,
+                repeatable, identical environments for your application.
+              </p>
+              <p>
+                Idempotency means we can perform the same operation twice with
+                no additional effect.
               </p>
               <ul className="actions">
                 <li>
@@ -168,7 +180,9 @@ class Homepage extends React.Component {
               <span className="image fit">
                 <img src={pic04} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>
+                Autonomy,<br />Simplicity
+              </h3>
               <p>
                 Adipiscing a commodo ante nunc magna lorem et interdum mi ante
                 nunc lobortis non amet vis sed volutpat et nascetur.
