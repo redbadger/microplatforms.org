@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <section id="footer">
         <ul className="icons">
-          <li>
+          {/* <li>
             <a href="#" className="icon alt fa-twitter">
               <span className="label">Twitter</span>
             </a>
@@ -19,7 +19,7 @@ class Footer extends React.Component {
             <a href="#" className="icon alt fa-instagram">
               <span className="label">Instagram</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://github.com/redbadger/microplatforms-whitepaper"
